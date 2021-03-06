@@ -8,8 +8,8 @@ var styles = StyleSheet.create({
       minHeight: '100%'
     },
     ImageContainer: {
-      width: 200,
-      height: 200,
+      width: 300,
+      height: 300,
       alignSelf: 'center',
       marginTop: '15%',
     },
@@ -39,7 +39,7 @@ var styles = StyleSheet.create({
       backgroundColor: 'green',
       alignSelf: 'center',
       width: '90%',
-      height: '20%',
+      height: '30%',
     },
     slider: {
         alignSelf: 'center',
@@ -54,12 +54,21 @@ var styles = StyleSheet.create({
         color: '#fff',
         position: 'absolute',
         top: '20%',
+        borderWidth: 1,
     },
     endCount: {
         color: '#fff',
         alignSelf: 'flex-end',
         position: 'absolute',
         top: '20%',
+        borderWidth: 1,
+    },
+    ctrlIcons: {
+      backgroundColor: 'blue',
+      alignSelf: 'stretch',
+      height: '45%',
+      marginTop: '7%',
+      flexDirection: 'row',
     }
 });
 

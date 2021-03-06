@@ -1,7 +1,7 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
+import {PlaylistBtn, PlayBtn, PrevBtn, NextBtn} from './Components/Buttons/MusicButtons'
 import {LinearGradient} from 'expo-linear-gradient';
-import { StyleSheet, Text, View, ImageBackground } from 'react-native';
+import { Image, Text, View, ImageBackground } from 'react-native';
 
 //Zo gebruik je externe style sheets
 var styles = require('./styleSheets/number1');
@@ -26,8 +26,21 @@ export default function App() {
 
         <View style={styles.ctrlContainer}>
           <Text style={styles.slider}>Hier komt de slider</Text>
-          <Text style={styles.beginCount}>0:00</Text>
-          <Text style={styles.endCount}>3:56</Text>
+
+          {/* Count */}
+          <View>
+            <Text style={styles.beginCount}>0:00</Text>
+            <Text style={styles.endCount}>3:56</Text>
+          </View>
+
+          {/*Controlls */}
+          <View style={styles.ctrlIcons}>
+            <PrevBtn givenColor={'#7851a9'} />
+            <PlayBtn givenColor={'#7851a9'} />
+            <NextBtn givenColor={'#7851a9'} />
+          </View>
+          {/* <Image source={require('./assets/icons/Playlist.png')}/> */}
+          <PlaylistBtn givenColor={'#7851a9'} />
         </View>
         </LinearGradient>
       </View>
