@@ -1,7 +1,6 @@
 import { Image, TouchableOpacity, View} from 'react-native';
 import React, { useState } from "react";
 
-
 export const PlaylistBtn = ({givenColor}) => {
     const [color, setColor] = useState('rgba(0, 0, 0, 0)');
     const onPress = () => {
@@ -23,7 +22,7 @@ export const PlaylistBtn = ({givenColor}) => {
             <TouchableOpacity
                 onPress={onPress}
             >
-                <Image source={require('../assets/icons/Playlist.png')} style={{alignSelf: 'center'}}/>
+                <Image source={require('./assets/icons/Playlist.png')} style={{alignSelf: 'center'}}/>
             </TouchableOpacity>
         </View>
     )

@@ -18,7 +18,7 @@ export const PlayBtn = ({givenColor}) => {
             <TouchableOpacity
                 onPress={onPress}
             >
-                <Image source={require('../assets/icons/Play-Pause.png')} style={{}}/>
+                <Image source={require('./assets/images/Play.png')} style={{}}/>
             </TouchableOpacity>
         </View>
     )

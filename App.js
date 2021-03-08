@@ -1,7 +1,10 @@
 import React from 'react';
-import {PlaylistBtn, PlayBtn, PrevBtn, NextBtn} from './Components/Buttons/MusicButtons'
 import {LinearGradient} from 'expo-linear-gradient';
 import { Image, Text, View, ImageBackground } from 'react-native';
+import {NextBtn} from './Components/NextBtn';
+import {PlayBtn} from './Components/PlayBtn';
+import {PlaylistBtn} from './Components/PlaylistBtn';
+import {PrevBtn} from './Components/PrevBtn';
 
 //Zo gebruik je externe style sheets
 var styles = require('./styleSheets/number1');
@@ -35,11 +38,8 @@ export default function App() {
 
           {/*Controlls */}
           <View style={styles.ctrlIcons}>
-            <PrevBtn givenColor={'#7851a9'} />
-            <PlayBtn givenColor={'#7851a9'} />
-            <NextBtn givenColor={'#7851a9'} />
+            <PrevBtn givenColor={'#7851a9'}/>
           </View>
-          {/* <Image source={require('./assets/icons/Playlist.png')}/> */}
           <PlaylistBtn givenColor={'#7851a9'} />
         </View>
         </LinearGradient>
